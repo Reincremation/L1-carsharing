@@ -6,18 +6,26 @@
   <title>Бронирование — DriveNow</title>
 </head>
 <body>
-  <header><h1>Бронирование автомобиля</h1><p>Заполните форму, чтобы запланировать поездку.</p></header>
+  <header>
+    <h1>Бронирование автомобиля</h1>
+    <p>Заполните форму, чтобы запланировать поездку.</p>
+  </header>
+
   <nav aria-label="Основная навигация">
     <ul>
-      <li><a href="index.html">Главная</a></li><li><a href="catalog.html">Автомобили</a></li>
-      <li><a href="detail.html">Об автомобиле</a></li><li><a href="collection.html">История поездок</a></li>
-      <li><a href="checkout.html">Бронирование</a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Автомобили</a></li>
+      <li><a href="detail.html">Об автомобиле</a></li>
+      <li><a href="collection.html">История поездок</a></li>
+      <li><a href="checkout.html" aria-current="page">Бронирование</a></li>
     </ul>
   </nav>
+
   <main>
     <form action="#" method="post">
       <fieldset>
         <legend>Данные бронирования</legend>
+
         <p>
           <label for="car">Автомобиль:</label>
           <select id="car" name="car" required>
@@ -27,42 +35,65 @@
             <option value="polo">Volkswagen Polo</option>
           </select>
         </p>
+
         <p>
           <label for="start">Дата и время начала аренды:</label>
           <input type="datetime-local" id="start" name="start" required>
         </p>
-        <p>Тип страховки:</p>
-        <input type="radio" id="insurance-basic" name="insurance" value="basic" required>
-        <label for="insurance-basic">Базовая</label>
-        <input type="radio" id="insurance-extended" name="insurance" value="extended">
-        <label for="insurance-extended">Расширенная</label>
-        <input type="radio" id="insurance-full" name="insurance" value="full">
-        <label for="insurance-full">Полная</label>
+
+        <fieldset>
+          <legend>Тип страховки</legend>
+          <p>
+            <input type="radio" id="insurance-basic" name="insurance" value="basic" required>
+            <label for="insurance-basic">Базовая</label>
+
+            <input type="radio" id="insurance-extended" name="insurance" value="extended">
+            <label for="insurance-extended">Расширенная</label>
+
+            <input type="radio" id="insurance-full" name="insurance" value="full">
+            <label for="insurance-full">Полная</label>
+          </p>
+        </fieldset>
+
         <p>
           <input type="checkbox" id="child-seat" name="child_seat" value="yes">
           <label for="child-seat">Требуется детское кресло</label>
         </p>
+
         <p>
           <label for="name">ФИО:</label>
           <input type="text" id="name" name="name" minlength="2" maxlength="100" required>
         </p>
+
         <p>
           <label for="phone">Контактный телефон:</label>
-          <input type="tel" id="phone" name="phone" pattern="[+0-9() -]{7,20}" required>
+          <input type="tel" id="phone" name="phone" pattern="[+0-9() \-]{7,20}" required>
         </p>
+
         <p>
           <label for="email">Электронная почта:</label>
           <input type="email" id="email" name="email" required>
         </p>
+
         <p>
           <label for="comment">Комментарий:</label>
           <textarea id="comment" name="comment" rows="4" maxlength="500"></textarea>
         </p>
-        <p><button type="submit">Отправить заявку</button></p>
+
+        <p>
+          <button type="submit">Отправить заявку</button>
+        </p>
       </fieldset>
     </form>
+
     <p>Это учебная форма: данные не отправляются на реальный сервер.</p>
   </main>
-  <footer><p>© 2026 DriveNow. Учебный проект.</p></footer>
+
+  <footer>
+    <p>© 2026 DriveNow. Учебный проект.</p>
+    <address>
+      Почта: <a href="mailto:azvalv1@mail.ru">azvalv1@mail.ru</a>
+    </address>
+  </footer>
 </body>
 </html>
