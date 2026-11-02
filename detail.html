@@ -1,59 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hyundai Solaris — DriveNow</title>
-</head>
-<body>
-  <header>
-    <h1>Hyundai Solaris</h1>
-    <p>Подробная информация об автомобиле.</p>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Hyundai Solaris &mdash; DriveNow
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body class="page">
+  <header class="site-header">
+   <h1 class="site-header__title">
+    Hyundai Solaris
+   </h1>
+   <p class="site-header__subtitle">
+    &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&acy;&yacy; &icy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&icy;&yacy; &ocy;&bcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;.
+   </p>
   </header>
-
-  <nav aria-label="Основная навигация">
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Автомобили</a></li>
-      <li><a href="detail.html" aria-current="page">Об автомобиле</a></li>
-      <li><a href="collection.html">История поездок</a></li>
-      <li><a href="checkout.html">Бронирование</a></li>
-    </ul>
+  <nav aria-label="&Ocy;&scy;&ncy;&ocy;&vcy;&ncy;&acy;&yacy; &ncy;&acy;&vcy;&icy;&gcy;&acy;&tscy;&icy;&yacy;" class="nav">
+   <ul class="nav__list">
+    <li class="nav__item">
+     <a class="nav__link" href="index.html">
+      &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a class="nav__link" href="catalog.html">
+      &Acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&icy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a aria-current="page" class="nav__link nav__link_active" href="detail.html">
+      &Ocy;&bcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a class="nav__link" href="collection.html">
+      &Icy;&scy;&tcy;&ocy;&rcy;&icy;&yacy; &pcy;&ocy;&iecy;&zcy;&dcy;&ocy;&kcy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a class="nav__link" href="checkout.html">
+      &Bcy;&rcy;&ocy;&ncy;&icy;&rcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;
+     </a>
+    </li>
+   </ul>
   </nav>
-
-  <main>
-    <article>
-      <img src="images/solaris.jpg" alt="Серебристый Hyundai Solaris, выбранный для аренды" width="480">
-
-      <section>
-        <h2>Описание</h2>
-        <p>Hyundai Solaris — компактный седан, подходящий для поездок по городу и коротких маршрутов за его пределами.</p>
-      </section>
-
-      <section>
-        <h2>Характеристики</h2>
-        <ul>
-          <li>Класс: эконом</li>
-          <li>Тип кузова: седан</li>
-          <li>Количество мест: 5</li>
-          <li>Коробка передач: автоматическая</li>
-          <li>Стоимость аренды: 12 ₽/мин</li>
-        </ul>
-      </section>
-
-      <p><a href="checkout.html">Забронировать автомобиль</a></p>
-    </article>
-
-    <aside>
-      <p>Перед началом поездки проверьте состояние автомобиля и уровень топлива.</p>
-    </aside>
+  <main class="page__content content">
+   <article class="car-details">
+    <img alt="&Scy;&iecy;&rcy;&iecy;&bcy;&rcy;&icy;&scy;&tcy;&ycy;&jcy; Hyundai Solaris, &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ncy;&ycy;&jcy; &dcy;&lcy;&yacy; &acy;&rcy;&iecy;&ncy;&dcy;&ycy;" class="car-details__image" src="images/solaris.jpg"/>
+    <section class="car-details__section">
+     <h2 class="car-details__heading">
+      &Ocy;&pcy;&icy;&scy;&acy;&ncy;&icy;&iecy;
+     </h2>
+     <p class="car-details__text">
+      Hyundai Solaris &mdash; &kcy;&ocy;&mcy;&pcy;&acy;&kcy;&tcy;&ncy;&ycy;&jcy; &scy;&iecy;&dcy;&acy;&ncy;, &pcy;&ocy;&dcy;&khcy;&ocy;&dcy;&yacy;&shchcy;&icy;&jcy; &dcy;&lcy;&yacy; &pcy;&ocy;&iecy;&zcy;&dcy;&ocy;&kcy; &pcy;&ocy; &gcy;&ocy;&rcy;&ocy;&dcy;&ucy; &icy; &kcy;&ocy;&rcy;&ocy;&tcy;&kcy;&icy;&khcy; &mcy;&acy;&rcy;&shcy;&rcy;&ucy;&tcy;&ocy;&vcy; &zcy;&acy; &iecy;&gcy;&ocy; &pcy;&rcy;&iecy;&dcy;&iecy;&lcy;&acy;&mcy;&icy;.
+     </p>
+    </section>
+    <section class="car-details__section">
+     <h2 class="car-details__heading">
+      &KHcy;&acy;&rcy;&acy;&kcy;&tcy;&iecy;&rcy;&icy;&scy;&tcy;&icy;&kcy;&icy;
+     </h2>
+     <ul class="car-details__list">
+      <li class="car-details__item">
+       &Kcy;&lcy;&acy;&scy;&scy;: &ecy;&kcy;&ocy;&ncy;&ocy;&mcy;
+      </li>
+      <li class="car-details__item">
+       &Tcy;&icy;&pcy; &kcy;&ucy;&zcy;&ocy;&vcy;&acy;: &scy;&iecy;&dcy;&acy;&ncy;
+      </li>
+      <li class="car-details__item">
+       &Kcy;&ocy;&lcy;&icy;&chcy;&iecy;&scy;&tcy;&vcy;&ocy; &mcy;&iecy;&scy;&tcy;: 5
+      </li>
+      <li class="car-details__item">
+       &Kcy;&ocy;&rcy;&ocy;&bcy;&kcy;&acy; &pcy;&iecy;&rcy;&iecy;&dcy;&acy;&chcy;: &acy;&vcy;&tcy;&ocy;&mcy;&acy;&tcy;&icy;&chcy;&iecy;&scy;&kcy;&acy;&yacy;
+      </li>
+      <li class="car-details__item">
+       &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy; &acy;&rcy;&iecy;&ncy;&dcy;&ycy;: 12 ₽/&mcy;&icy;&ncy;
+      </li>
+     </ul>
+    </section>
+    <p class="car-details__action">
+     <a class="button button_primary" href="checkout.html">
+      &Zcy;&acy;&bcy;&rcy;&ocy;&ncy;&icy;&rcy;&ocy;&vcy;&acy;&tcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&softcy;
+     </a>
+    </p>
+   </article>
+   <aside class="content__notice notice">
+    <p>
+     &Pcy;&iecy;&rcy;&iecy;&dcy; &ncy;&acy;&chcy;&acy;&lcy;&ocy;&mcy; &pcy;&ocy;&iecy;&zcy;&dcy;&kcy;&icy; &pcy;&rcy;&ocy;&vcy;&iecy;&rcy;&softcy;&tcy;&iecy; &scy;&ocy;&scy;&tcy;&ocy;&yacy;&ncy;&icy;&iecy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; &icy; &ucy;&rcy;&ocy;&vcy;&iecy;&ncy;&softcy; &tcy;&ocy;&pcy;&lcy;&icy;&vcy;&acy;.
+    </p>
+   </aside>
   </main>
-
-    <footer>
-    <p>© 2026 DriveNow. Учебный проект.</p>
-    <address>
-      Почта: <a href="mailto:azvalv1@mail.ru">azvalv1@mail.ru</a>
-    </address>
+  <footer class="footer">
+   <p class="footer__copy">
+    &copy; 2026 DriveNow.
+   </p>
+   <address class="footer__address">
+    &Pcy;&ocy;&chcy;&tcy;&acy;:
+    <a class="footer__link" href="mailto:azvalv1@mail.ru">
+     azvalv1@mail.ru
+    </a>
+   </address>
   </footer>
-</body>
+ </body>
 </html>

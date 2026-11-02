@@ -1,63 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Автомобили — DriveNow</title>
-</head>
-<body>
-  <header>
-    <h1>Каталог автомобилей</h1>
-    <p>Выберите автомобиль для своей поездки.</p>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   &Acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&icy; &mdash; DriveNow
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body class="page">
+  <header class="site-header">
+   <h1 class="site-header__title">
+    &Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;&jcy;
+   </h1>
+   <p class="site-header__subtitle">
+    &Vcy;&ycy;&bcy;&iecy;&rcy;&icy;&tcy;&iecy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&softcy; &dcy;&lcy;&yacy; &scy;&vcy;&ocy;&iecy;&jcy; &pcy;&ocy;&iecy;&zcy;&dcy;&kcy;&icy;.
+   </p>
   </header>
-
-  <nav aria-label="Основная навигация">
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html" aria-current="page">Автомобили</a></li>
-      <li><a href="detail.html">Об автомобиле</a></li>
-      <li><a href="collection.html">История поездок</a></li>
-      <li><a href="checkout.html">Бронирование</a></li>
-    </ul>
+  <nav aria-label="&Ocy;&scy;&ncy;&ocy;&vcy;&ncy;&acy;&yacy; &ncy;&acy;&vcy;&icy;&gcy;&acy;&tscy;&icy;&yacy;" class="nav">
+   <ul class="nav__list">
+    <li class="nav__item">
+     <a class="nav__link" href="index.html">
+      &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a aria-current="page" class="nav__link nav__link_active" href="catalog.html">
+      &Acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&icy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a class="nav__link" href="detail.html">
+      &Ocy;&bcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a class="nav__link" href="collection.html">
+      &Icy;&scy;&tcy;&ocy;&rcy;&icy;&yacy; &pcy;&ocy;&iecy;&zcy;&dcy;&ocy;&kcy;
+     </a>
+    </li>
+    <li class="nav__item">
+     <a class="nav__link" href="checkout.html">
+      &Bcy;&rcy;&ocy;&ncy;&icy;&rcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;
+     </a>
+    </li>
+   </ul>
   </nav>
-
-  <main>
-    <section>
-      <h2>Доступные автомобили</h2>
-
-      <article>
-        <h3>Hyundai Solaris</h3>
-        <img src="images/solaris.jpg" alt="Седан Hyundai Solaris серебристого цвета" width="320">
-        <p>Экономичный городской седан для повседневных поездок.</p>
-        <p>Стоимость: 12 ₽/мин</p>
-        <p><a href="detail.html">Подробнее об автомобиле</a></p>
-      </article>
-
-      <article>
-        <h3>Kia Rio</h3>
-        <img src="images/rio.jpg" alt="Автомобиль Kia Rio на городской улице" width="320">
-        <p>Компактный автомобиль для комфортного передвижения по городу.</p>
-        <p>Стоимость: 13 ₽/мин</p>
-        <p><a href="detail.html">Подробнее об автомобиле</a></p>
-      </article>
-
-      <article>
-        <h3>Volkswagen Polo</h3>
-        <img src="images/polo.jpg" alt="Volkswagen Polo, вид спереди и сбоку" width="320">
-        <p>Практичный автомобиль с вместительным багажником.</p>
-        <p>Стоимость: 14 ₽/мин</p>
-        <p><a href="detail.html">Подробнее об автомобиле</a></p>
-      </article>
-
-      <p><small>Примечание: детальная страница в прототипе открывается на примере Hyundai Solaris.</small></p>
-    </section>
+  <main class="page__content content">
+   <section aria-label="&Fcy;&icy;&lcy;&softcy;&tcy;&rcy;&ycy; &kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy;&acy;" class="content__filters filters">
+    <h2 class="filters__title">
+     &Fcy;&icy;&lcy;&softcy;&tcy;&rcy;&ycy; &acy;&vcy;&tcy;&ocy;&pcy;&acy;&rcy;&kcy;&acy;
+    </h2>
+    <label class="filters__label" for="class-filter">
+     &Kcy;&lcy;&acy;&scy;&scy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy;
+    </label>
+    <select class="filters__select" id="class-filter" name="class">
+     <option value="all">
+      &Vcy;&scy;&iecy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&icy;
+     </option>
+     <option value="economy">
+      &Ecy;&kcy;&ocy;&ncy;&ocy;&mcy;
+     </option>
+    </select>
+    <label class="filters__label" for="insurance-filter">
+     &Scy;&tcy;&rcy;&acy;&khcy;&ocy;&vcy;&kcy;&acy;
+    </label>
+    <select class="filters__select" id="insurance-filter" name="insurance">
+     <option value="all">
+      &Lcy;&yucy;&bcy;&acy;&yacy;
+     </option>
+     <option value="basic">
+      &Bcy;&acy;&zcy;&ocy;&vcy;&acy;&yacy;
+     </option>
+     <option value="extended">
+      &Rcy;&acy;&scy;&shcy;&icy;&rcy;&iecy;&ncy;&ncy;&acy;&yacy;
+     </option>
+    </select>
+   </section>
+   <section class="content__section section">
+    <h2 class="section__title">
+     &Dcy;&ocy;&scy;&tcy;&ucy;&pcy;&ncy;&ycy;&iecy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&icy;
+    </h2>
+    <article class="section__card car-card">
+     <h3 class="car-card__title">
+      Hyundai Solaris
+     </h3>
+     <div class="car-card__photo">
+      <img alt="&Scy;&iecy;&dcy;&acy;&ncy; Hyundai Solaris &scy;&iecy;&rcy;&iecy;&bcy;&rcy;&icy;&scy;&tcy;&ocy;&gcy;&ocy; &tscy;&vcy;&iecy;&tcy;&acy;" class="car-card__image" src="images/solaris.jpg"/>
+      <span class="car-card__insurance">
+       &checkmark; &Scy;&tcy;&rcy;&acy;&khcy;&ocy;&vcy;&kcy;&acy; &vcy;&kcy;&lcy;&yucy;&chcy;&iecy;&ncy;&acy;
+      </span>
+     </div>
+     <p class="car-card__description">
+      &Ecy;&kcy;&ocy;&ncy;&ocy;&mcy;&icy;&chcy;&ncy;&ycy;&jcy; &gcy;&ocy;&rcy;&ocy;&dcy;&scy;&kcy;&ocy;&jcy; &scy;&iecy;&dcy;&acy;&ncy; &dcy;&lcy;&yacy; &pcy;&ocy;&vcy;&scy;&iecy;&dcy;&ncy;&iecy;&vcy;&ncy;&ycy;&khcy; &pcy;&ocy;&iecy;&zcy;&dcy;&ocy;&kcy;.
+     </p>
+     <p class="car-card__price">
+      &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy;: 12 ₽/&mcy;&icy;&ncy;
+     </p>
+     <p class="car-card__action">
+      <a class="button button_primary" href="detail.html">
+       &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&iecy;&iecy; &ocy;&bcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;
+      </a>
+     </p>
+    </article>
+    <article class="section__card car-card">
+     <h3 class="car-card__title">
+      Kia Rio
+     </h3>
+     <div class="car-card__photo">
+      <img alt="&Acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&softcy; Kia Rio &ncy;&acy; &gcy;&ocy;&rcy;&ocy;&dcy;&scy;&kcy;&ocy;&jcy; &ucy;&lcy;&icy;&tscy;&iecy;" class="car-card__image" src="images/rio.jpg"/>
+      <span class="car-card__insurance">
+       &checkmark; &Bcy;&acy;&zcy;&ocy;&vcy;&acy;&yacy; &scy;&tcy;&rcy;&acy;&khcy;&ocy;&vcy;&kcy;&acy;
+      </span>
+     </div>
+     <p class="car-card__description">
+      &Kcy;&ocy;&mcy;&pcy;&acy;&kcy;&tcy;&ncy;&ycy;&jcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&softcy; &dcy;&lcy;&yacy; &kcy;&ocy;&mcy;&fcy;&ocy;&rcy;&tcy;&ncy;&ocy;&gcy;&ocy; &pcy;&iecy;&rcy;&iecy;&dcy;&vcy;&icy;&zhcy;&iecy;&ncy;&icy;&yacy; &pcy;&ocy; &gcy;&ocy;&rcy;&ocy;&dcy;&ucy;.
+     </p>
+     <p class="car-card__price">
+      &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy;: 13 ₽/&mcy;&icy;&ncy;
+     </p>
+     <p class="car-card__action">
+      <a class="button button_primary" href="detail.html">
+       &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&iecy;&iecy; &ocy;&bcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;
+      </a>
+     </p>
+    </article>
+    <article class="section__card car-card">
+     <h3 class="car-card__title">
+      Volkswagen Polo
+     </h3>
+     <div class="car-card__photo">
+      <img alt="Volkswagen Polo, &vcy;&icy;&dcy; &scy;&pcy;&iecy;&rcy;&iecy;&dcy;&icy; &icy; &scy;&bcy;&ocy;&kcy;&ucy;" class="car-card__image" src="images/polo.jpg"/>
+      <span class="car-card__insurance">
+       &checkmark; &Scy;&tcy;&rcy;&acy;&khcy;&ocy;&vcy;&kcy;&acy; &vcy;&kcy;&lcy;&yucy;&chcy;&iecy;&ncy;&acy;
+      </span>
+     </div>
+     <p class="car-card__description">
+      &Pcy;&rcy;&acy;&kcy;&tcy;&icy;&chcy;&ncy;&ycy;&jcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&softcy; &scy; &vcy;&mcy;&iecy;&scy;&tcy;&icy;&tcy;&iecy;&lcy;&softcy;&ncy;&ycy;&mcy; &bcy;&acy;&gcy;&acy;&zhcy;&ncy;&icy;&kcy;&ocy;&mcy;.
+     </p>
+     <p class="car-card__price">
+      &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy;: 14 ₽/&mcy;&icy;&ncy;
+     </p>
+     <p class="car-card__action">
+      <a class="button button_primary" href="detail.html">
+       &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&iecy;&iecy; &ocy;&bcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&iecy;
+      </a>
+     </p>
+    </article>
+   </section>
   </main>
-
-    <footer>
-    <p>© 2026 DriveNow. Учебный проект.</p>
-    <address>
-      Почта: <a href="mailto:azvalv1@mail.ru">azvalv1@mail.ru</a>
-    </address>
+  <footer class="footer">
+   <p class="footer__copy">
+    &copy; 2026 DriveNow.
+   </p>
+   <address class="footer__address">
+    &Pcy;&ocy;&chcy;&tcy;&acy;:
+    <a class="footer__link" href="mailto:azvalv1@mail.ru">
+     azvalv1@mail.ru
+    </a>
+   </address>
   </footer>
-</body>
+ </body>
 </html>
